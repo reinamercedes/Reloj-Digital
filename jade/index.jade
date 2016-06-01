@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Reloj Digital
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css')
+  body
+    header 
+        div.container
+            h1 Reloj Digital
+            div.row
+                div.title
+                    h3 HORA Y FECHA ACTUAL
+                div#reloj
+            div.row
+                div#fecha
+            div.row
+                div.title
+                    h3 PAISES SELECCIONADOS
+                div#place
+            div.row
+                div.col-md-offset-5.col-md-3
+                    // Trigger the modal with a button
+                    button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Selecciona otro país
+                    // Modal
+                    #myModal.modal.fade(role='dialog')
+                      .modal-dialog
+                        // Modal content
+                        .modal-content
+                          .modal-header
+                            button.close(type='button', data-dismiss='modal') ×
+                            h4.modal-title Modal Header
+                          .modal-body
+                            .checkbox
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='0')
+                                  | Chicago
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='1')
+                                  | Sau Paulo
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='2')
+                                  | Santiago
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='3')
+                                  | Mexico D.F.
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='4')
+                                  | Caracas
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='5')
+                                  | Brasilia
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='6')
+                                  | Quito
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='7')
+                                  | Guayaquil
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='8')
+                                  | Santa Mata
+                              .checkbox
+                                label
+                                  input.pais(type='checkbox', value='9')
+                                  | Bogota
+                          .modal-footer
+                            button.btn.btn-default(type='button', data-dismiss='modal') Close
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
